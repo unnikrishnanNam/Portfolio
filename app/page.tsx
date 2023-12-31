@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Intro from "@/components/Intro";
+import Projects from "@/components/Projects";
 import VerticalDivider from "@/components/VerticalDivider";
 import Image from "next/image";
 
@@ -8,7 +9,8 @@ export default function Home() {
     <main className="flex flex-col items-center">
       <Intro />
       <VerticalDivider />
-      <About/>
+      <About />
+      <Projects />
     </main>
   );
 }
