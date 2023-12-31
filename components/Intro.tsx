@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 import ProfilePicture from "../public/ProfilePicture.jpg";
 
 export default function Intro() {
@@ -60,8 +60,7 @@ export default function Intro() {
         <span className="font-bold">Unnikrishnan Namboothiri.</span> I'm an
         aspiring <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">5 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        building <span className="">sites & apps</span>.
       </motion.h1>
 
       <motion.div
@@ -84,13 +83,13 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/CV.pdf"
           download
-        > 
+        >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack "
+          className="bg-white p-4 text-gray-700 hover:text-blue-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack "
           href="https://linkedin.com/in/unnikrishnan-namboothiri-452b05203/"
           target="_blank"
         >
@@ -103,6 +102,13 @@ export default function Intro() {
           target="_blank"
         >
           <FaGithubSquare />
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-pink-600 active:scale-105 transition cursor-pointer borderBlack "
+          href="https://github.com/unnikrishnanNam"
+          target="_blank"
+        >
+          <FaInstagramSquare />
         </a>
       </motion.div>
     </section>
