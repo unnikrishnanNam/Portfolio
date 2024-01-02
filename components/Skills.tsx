@@ -16,7 +16,7 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white border border-black/[0.1] rounded-xl py-3 px-5"
+            className="bg-white border border-black/[0.1] rounded-xl py-3 px-5 flex items-center gap-2"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
               opacity: 1,
@@ -27,7 +27,8 @@ const Skills = () => {
               once: true,
             }}
           >
-            {skill}
+            {skill.icon}
+            {skill.name}
           </motion.li>
         ))}
       </ul>

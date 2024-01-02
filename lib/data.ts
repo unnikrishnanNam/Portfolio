@@ -1,10 +1,44 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import {
+  FaCss3,
+  FaJs,
+  FaPhoenixFramework,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import {
+  SiPrisma,
+  SiMongodb,
+  SiGraphql,
+  SiApollographql,
+  SiExpress,
+  SiDjango,
+} from "react-icons/si";
+import {
+  TbBrandFramerMotion,
+  TbBrandNextjs,
+  TbBrandRedux,
+} from "react-icons/tb";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import { FaHtml5 } from "react-icons/fa";
+import {
+  BiLogoCss3,
+  BiLogoGit,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoNetlify,
+  BiLogoNodejs,
+  BiLogoPostgresql,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { color } from "framer-motion";
 
 export const links = [
   {
@@ -85,23 +119,99 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  // "HTML",
+  // "CSS",
+  // "JavaScript",
+  // "TypeScript",
+  // "React",
+  // "Next.js",
+  // "Node.js",
+  // "Git",
+  // "Tailwind",
+  // "Prisma",
+  // "MongoDB",
+  // "Redux",
+  // "GraphQL",
+  // "Apollo",
+  // "Express",
+  // "PostgreSQL",
+  // "Python",
+  // "Django",
+  // "Framer Motion",
+  {
+    name: "HTML",
+    icon: React.createElement(BiLogoHtml5, { color: "#9ca3af" }),
+  },
+  {
+    name: "CSS",
+    icon: React.createElement(BiLogoCss3, { color: "#9ca3af" }),
+  },
+  {
+    name: "JavaScript",
+    icon: React.createElement(BiLogoJavascript, { color: "#9ca3af" }),
+  },
+  {
+    name: "TypeScript",
+    icon: React.createElement(BiLogoTypescript, { color: "#9ca3af" }),
+  },
+  {
+    name: "React",
+    icon: React.createElement(BiLogoReact, { color: "#9ca3af" }),
+  },
+  {
+    name: "Next.js",
+    icon: React.createElement(TbBrandNextjs, { color: "#9ca3af" }),
+  },
+  {
+    name: "Node.js",
+    icon: React.createElement(BiLogoNodejs, { color: "#9ca3af" }),
+  },
+  {
+    name: "Git",
+    icon: React.createElement(BiLogoGit, { color: "#9ca3af" }),
+  },
+  {
+    name: "Tailwind",
+    icon: React.createElement(BiLogoTailwindCss, { color: "#9ca3af" }),
+  },
+  {
+    name: "Prisma",
+    icon: React.createElement(SiPrisma, { color: "#9ca3af" }),
+  },
+  {
+    name: "MongoDB",
+    icon: React.createElement(SiMongodb, { color: "#9ca3af" }),
+  },
+  {
+    name: "Redux",
+    icon: React.createElement(TbBrandRedux, { color: "#9ca3af" }),
+  },
+  {
+    name: "GraphQL",
+    icon: React.createElement(SiGraphql, { color: "#9ca3af" }),
+  },
+  {
+    name: "Apollo",
+    icon: React.createElement(SiApollographql, { color: "#9ca3af" }),
+  },
+  {
+    name: "Express",
+    icon: React.createElement(SiExpress, { color: "#9ca3af" }),
+  },
+  {
+    name: "PostgreSQL",
+    icon: React.createElement(BiLogoPostgresql, { color: "#9ca3af" }),
+  },
+  {
+    name: "Python",
+    icon: React.createElement(FaPython, { color: "#9ca3af" }),
+  },
+  {
+    name: "Django",
+    icon: React.createElement(SiDjango, { color: "#9ca3af" }),
+  },
+  {
+    name: "Framer Motion",
+    icon: React.createElement(TbBrandFramerMotion, { color: "#9ca3af" }),
+  },
 ] as const;
