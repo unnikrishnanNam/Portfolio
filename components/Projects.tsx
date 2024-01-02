@@ -5,7 +5,10 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <section id="projects" className="scroll-mt-24">
+    <section
+      id="projects"
+      className="scroll-mt-24 mb-28 max-w-[53rem] text-center sm:mb-40"
+    >
       <SectionHeading>Projects</SectionHeading>
       <div>
         {projectsData.map((proj, index) => (

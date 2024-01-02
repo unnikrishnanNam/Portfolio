@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import VerticalDivider from "@/components/VerticalDivider";
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <VerticalDivider />
       <About />
       <Projects />
+      <Skills />
     </main>
   );
 }
