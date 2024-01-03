@@ -1,13 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./SectionHeading";
 import { skillsData } from "@/lib/data";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Skills = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Skills");
+    }
+  }, [inView]);
   return (
     <section
+      ref={ref}
       id="skills"
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
