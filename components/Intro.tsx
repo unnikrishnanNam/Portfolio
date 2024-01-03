@@ -57,9 +57,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Unnikrishnan Namboothiri.</span> I am an
-        aspiring <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">5 years</span> of experience. I enjoy
+        <span className="font-bold">
+          <span className="text-orange-500">Unnikrishnan</span>{" "}
+          <span className="text-green-500"> Namboothiri</span>.
+        </span>{" "}
+        I am an aspiring <span className="font-bold">full-stack developer</span>{" "}
+        with <span className="font-bold">5 years</span> of experience. I enjoy
         building <span className="">sites & apps</span>.
       </motion.h1>
 
@@ -87,29 +90,30 @@ export default function Intro() {
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
+        <div className="flex flex-row gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-blue-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack "
+            href="https://linkedin.com/in/unnikrishnan-namboothiri-452b05203/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-blue-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack "
-          href="https://linkedin.com/in/unnikrishnan-namboothiri-452b05203/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack "
-          href="https://github.com/unnikrishnanNam"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-pink-600 active:scale-105 transition cursor-pointer borderBlack "
-          href="https://github.com/unnikrishnanNam"
-          target="_blank"
-        >
-          <FaInstagramSquare />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack "
+            href="https://github.com/unnikrishnanNam"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-pink-600 active:scale-105 transition cursor-pointer borderBlack "
+            href="https://github.com/unnikrishnanNam"
+            target="_blank"
+          >
+            <FaInstagramSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
