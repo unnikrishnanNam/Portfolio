@@ -23,7 +23,7 @@ export default function Intro() {
   }, [inView]);
   return (
     <section
-    ref={ref}
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -120,7 +120,7 @@ export default function Intro() {
           </a>
           <a
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-pink-600 active:scale-105 transition cursor-pointer borderBlack "
-            href="https://github.com/unnikrishnanNam"
+            href="https://www.instagram.com/unnikrishnan.n.ek/"
             target="_blank"
           >
             <FaInstagramSquare />
